@@ -3,6 +3,7 @@ body {
     display: flex;
     background-color: black;
     overflow: hidden;
+    cursor: default;
     align-items: center;
     justify-content: center;
     font-family: Calibri;
@@ -52,18 +53,31 @@ body {
 }
 
 .links {
-    min-width: 100vw;
-    min-height: 35px;
-    padding-top: 15px;
+    width: 100%;
+    min-height: 25px;
+    padding-top: 20px;
     text-align: center;
     background-color: #222;
     left: 0;
-    bottom: 0;
+    top: 0;
     position: fixed;
 }
 .links-language {
-    bottom: 15px;
+    top: 15px;
     right: 15px;
+    position: fixed;
+}
+
+.socials {
+    width: 50vw;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    min-height: 25px;
+    text-align: right;
+    background-color: #222;
+    border: 2px solid #555;
+    border-radius: 4px 4px 0 0;
+    bottom: 0;
     position: fixed;
 }
 a, nav { color: white; text-decoration: none; }
