@@ -31,7 +31,7 @@ body {
     width: 330px;
     height: 80px;
     position: fixed;
-    animation: playglow-en infinite linear 3s;
+    animation: playglow-en infinite linear 2s;
 }
 @keyframes playglow-en {
     0% { background: url("img/en/fight.png"); }
@@ -44,7 +44,7 @@ body {
     width: 330px;
     height: 80px;
     position: fixed;
-    animation: playglow-ru infinite linear 3s;
+    animation: playglow-ru infinite linear 2s;
 }
 @keyframes playglow-ru {
     0% { background: url("img/ru/fight.png"); }
@@ -69,16 +69,17 @@ body {
 }
 
 .socials {
-    width: 50vw;
+    width: 150px;
     padding-top: 20px;
     padding-bottom: 15px;
     min-height: 25px;
-    text-align: right;
+    text-align: center;
     background-color: #222;
     border: 2px solid #555;
     border-radius: 4px 4px 0 0;
     bottom: 0;
     position: fixed;
 }
+
 a, nav { color: white; text-decoration: none; }
 a:hover { color: white; text-shadow: white 1px 0 4px;}
