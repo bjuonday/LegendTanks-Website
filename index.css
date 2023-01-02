@@ -26,7 +26,7 @@ body {
 }
 
 .play-en, .play-en a {
-    background: url("img/en/fight.png");
+    background: url("/img/en/fight.png");
     cursor: pointer;
     width: 330px;
     height: 80px;
@@ -34,12 +34,12 @@ body {
     animation: playglow-en infinite linear 2s;
 }
 @keyframes playglow-en {
-    0% { background: url("img/en/fight.png"); }
-    50% { background: url("img/en/fight_hover.png"); }
-    100% { background: url ("img/en/fight.png"); }
+    0% { background: url("/img/en/fight.png"); }
+    50% { background: url("/img/en/fight_hover.png"); }
+    100% { background: url ("/img/en/fight.png"); }
 }
 .play-ru, .play-ru a {
-    background: url("img/ru/fight.png");
+    background: url("/img/ru/fight.png");
     cursor: pointer;
     width: 330px;
     height: 80px;
@@ -47,9 +47,20 @@ body {
     animation: playglow-ru infinite linear 2s;
 }
 @keyframes playglow-ru {
-    0% { background: url("img/ru/fight.png"); }
-    50% { background: url("img/ru/fight_hover.png"); }
-    100% { background: url ("img/ru/fight.png"); }
+    0% { background: url("/img/ru/fight.png"); }
+    50% { background: url("/img/ru/fight_hover.png"); }
+    100% { background: url ("/img/ru/fight.png"); }
+}
+
+.unavailable .play-ru, .unavailable .play-ru a {
+    filter: grayscale(100%), blur(4px);
+}
+
+.closed-icon {
+    background: url("/img/tech_support.png") center center no-repeat transparent;
+    width: 128px;
+    height: 128px;
+    position: fixed;
 }
 
 .links {
