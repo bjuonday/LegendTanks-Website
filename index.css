@@ -1,7 +1,7 @@
 body {
     min-height: 100vh;
     display: flex;
-    background-color: black;
+    background: url("/img/background.jpg") top left repeat black;
     overflow: hidden;
     cursor: default;
     align-items: center;
@@ -10,20 +10,19 @@ body {
 }
 
 .icon {
-    width: 845px;
-    height: 515px;
+    width: 765px;
+    height: 485px;
     position: fixed;
-    background: url("img/logo_alpha.png");
-    filter: blur(8px);
-    animation: glow infinite linear 6s;
+    background: url("img/logo.png");
+    filter: blur(2px);
 }
-@keyframes glow {
+/* @keyframes glow {
     0% { background-color: white; }
     25% { background-color: #666; }
     50% { background-color: #333; }
     75% { background-color: #666; }
     100% { background-color: white; }
-}
+} */
 
 .play-en, .play-en a {
     background: url("/img/en/fight.png");
@@ -52,12 +51,8 @@ body {
     100% { background: url ("/img/ru/fight.png"); }
 }
 
-.unavailable .play-ru, .unavailable .play-ru a {
-    filter: grayscale(100%), blur(4px);
-}
-
 .closed-icon {
-    background: url("/img/tech_support.png") center center no-repeat transparent;
+    background: url("/img/tech_support.png") center center no-repeat;
     width: 128px;
     height: 128px;
     position: fixed;
@@ -72,6 +67,7 @@ body {
     left: 0;
     top: 0;
     position: fixed;
+    box-shadow: 6px 6px 6px black;
 }
 .links-language {
     top: 15px;
